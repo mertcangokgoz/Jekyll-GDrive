@@ -1,4 +1,4 @@
-[![Gem Version](https://badge.fury.io/rb/jekyll-spotify.svg)](https://badge.fury.io/rb/jekyll-spotify)
+[![Gem Version](https://badge.fury.io/rb/jekyll-gdrivefolder.svg)](https://badge.fury.io/rb/jekyll-gdrivefolder)
 
 # Jekyll GDrive
 
