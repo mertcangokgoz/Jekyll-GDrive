@@ -9,27 +9,27 @@ This Jekyll plugin provides a Liquid tag which takes Google Drive Folder ID and 
 
 ### Project install
 
-Add to Gemfile.
+Add to Gemfile:
 
 ```ruby
-gem 'jekyll-gdrivefolder', '~> 0.0.1'
+group :jekyll_plugins do
+  gem 'jekyll-gdrivefolder', '~> 0.0.1'
+end
 ```
 
-Install it.
+Install it:
 
 ```sh
 bundle install 
 ```
 
-### Global install 
-
-Alternatively install the gem
+### Global install
 
 ```sh
 gem install jekyll-gdrivefolder
 ```
 
-and put this `_config.yml`
+Put this in `_config.yml`.
 
 ```yaml
 plugins:
@@ -37,6 +37,12 @@ plugins:
 ```
 
 ## Usage
+
+```liquid
+{% jekyll-gdrive FOLDER_ID %}
+```
+
+e.g.
 
 ```liquid
 {% jekyll-gdrive 0B7ExQgcdBN8pUXZha2FlcGRLeXM %}
