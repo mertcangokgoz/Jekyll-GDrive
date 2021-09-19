@@ -1,45 +1,53 @@
-[![Gem Version](https://badge.fury.io/rb/jekyll-gdrivefolder.svg)](https://badge.fury.io/rb/jekyll-gdrivefolder)
-
 # Jekyll GDrive
 
-This Jekyll pluging provides a tag that takes Google Drive Folder ID and generates a html snippet to embed folder
+[![Gem Version](https://badge.fury.io/rb/jekyll-gdrivefolder.svg)](https://badge.fury.io/rb/jekyll-gdrivefolder)
+
+
+This Jekyll plugin provides a Liquid tag which takes Google Drive Folder ID and generates a HTML snippet to embed a folder.
 
 ## Installation
 
-Add gemfile
+### Project install
 
-```
+Add to Gemfile.
+
+```ruby
 gem 'jekyll-gdrivefolder', '~> 0.0.1'
 ```
 
-Execute
+Install it.
 
-```
-bundle
+```sh
+bundle install 
 ```
 
-Alternative install the gem
+### Global install 
 
-```
+Alternatively install the gem
+
+```sh
 gem install jekyll-gdrivefolder
 ```
 
 and put this `_config.yml`
 
-```
-gems: [jekyll-gdrivefolder]
+```yaml
+plugins:
+  - jekyll-gdrivefolder
 ```
 
 ## Usage
 
-```
+```liquid
 {% jekyll-gdrive 0B7ExQgcdBN8pUXZha2FlcGRLeXM %}
 ```
 
 ## Result
 
-output the following code include page
+Outputs the following HTML.
 
-```
-<iframe src="https://drive.google.com/embeddedfolderview?id=0B7ExQgcdBN8pUXZha2FlcGRLeXM#list" style="width:100%; height:600px; border:0;"></iframe>
+```html
+<iframe src="https://drive.google.com/embeddedfolderview?id=0B7ExQgcdBN8pUXZha2FlcGRLeXM#list"
+  style="width:100%; height:600px; border:0;">
+</iframe>
 ```
